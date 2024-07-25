@@ -1,42 +1,116 @@
 # DPS Backend Coding Challenge
 
-## Overview
+<h2 align="center">
 
-This repository contains a very basic web application based on Typescript and Express.js. Main application file is `index.ts`. Node and npm are required.
+<p align="center">
+<img width="300" src="images/dps_logo.png" alt="Tejas's Avatar">
+<p/>
 
-## Environment Setup
+[About](#about) • [Features](#features) • [Coding Practices](#coding-practices) • [Installation](#installation) • [Endpoints](#endpoints) • [Deployment](#deployment) 
 
-Ensure you have Node.js (v14.x or later) and npm (v6.x or later) installed.  
-To set up and run the application, execute the following commands:
+</h2>
+
+<div align="center">
+<a href="http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com/docs" target="_blank">
+  <img alt="AWS" src="https://img.shields.io/badge/AWS_DEPLOYMENT-100000?style=for-the-badge&logo=AWS&logoColor=white&labelColor=FFFFFF&color=FFDD00">
+</a>
+<a href="https://documenter.getpostman.com/view/28054416/2sA3kYhywC#4a317ab6-facc-4bd3-8c72-cdd8f131322c" target="_blank">
+  <img alt="AWS" src="https://img.shields.io/badge/POSTMAN_COLLECTION-100000?style=for-the-badge&logo=AWS&logoColor=white&labelColor=FFFFFF&color=FFDD00">
+</a>
+</div>
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=7_xwizYJcjo" target="_blank"><img align="top" src="images/webapp-demo.webp" alt="Left Image" width="650"></a>
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=7_xwizYJcjo" target="_blank">Click to open video demo</a>
+</div>
+
+</p>
+
+
+## About
+
+<p align="center">
+<img width="160" src="images/tejas_avatar.png" alt="Tejas's Avatar">
+<p/>
+👋 Hello! I'm Tejas, Applying for Software Engineer Track at Batch#22 of DPS. This solution for the assignment.
+
+1. This covers the base requirements of task: **RestAPI, the Special Endpoint** and the **Optional task** [(as mentioned in Project Context and Challenge Tasks)](https://github.com/DigitalProductschool/dps-expressjs-challenge?tab=readme-ov-file#project-context)
+2. On top of that, this features: [**SwaggerUI Docs**](http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com/docs), [**Backend Validation**](https://github.com/Tejasmadhukar/dps-expressjs-challenge/blob/e9d3dba9ab90fba3cbdb25e48922b2911fab6f25/src/models/projectModel.ts#L43)
+3. Extra features are: [**Deployment on AWS EC2**](http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com), [**A live Postman Collection**](https://documenter.getpostman.com/view/28054416/2sA3kYhywC#4a317ab6-facc-4bd3-8c72-cdd8f131322c), [**Changelog**](https://github.com/Tejasmadhukar/dps-expressjs-challenge/blob/master/CHANGELOG.rst)
+
+## Installation
+
+There are two ways to run the code.
+### 1) Manual Run
 
 ```
-npm install
+npm i
 npm run dev
 ```
 
-The application will then be accessible at http://localhost:3000.
+## Features
 
-## Project Context
+| Feature                                            | Explanation                                                                                                 |  PR |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |-----|
+| ✅ A robust REST API                           | Implemented a RESTful API to expose CRUD operations for project and thier reports.                              |  #4    |
+| ✅ Special API Endpoint | Efficiently implemented the special api endpoint |   #2, #9   |
+| ✅ Authentication                           | Implemented bearer token authentication with a hardcoded token Password123               |   #5   |
+| ✅ Make a changelog.md                                    | Maintained a [changelog](CHANGELOG.rst) to document all changes, ensuring transparency and traceability.                                   |   #2   |
+| ✅ Backend deployment                              | Deployed the backend on [AWS](http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com) access.                                                    |   #10   |
+| ✅ Postman collection                              | Created and shared a [Postman collection](https://documenter.getpostman.com/view/28054416/2sA3kYhywC#4a317ab6-facc-4bd3-8c72-cdd8f131322c) for API testing, added the link to the README.                      |   #10   |
+| ✅ Documentation & SwaggerUI                       | Added doc string comments and integrated [SwaggerUI](http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com/docs) for API documentation.                                   |    #10  |
 
-You will develop a backend system for managing data about a company's projects and their associated reports. Each project may have multiple reports linked to it, though having reports is not mandatory. Start your implementation using the provided SQLite database([db/db.sqlite3](./db/db.sqlite3)).
+## Coding Practices
 
-Refer to the database schema provided for understanding the data structure 👇
+### 1) Project Structure
 
-![Database schema](images/database_schema.png)
+- Followed the **Model-Routes-Controllers-Services Directory Structure** for the application to create separation of logic between DB actions, business logic, and data representation. [[MDN Web Docs: Express.JS]](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
+  - <img src="images/mdn-directory-structure.png" alt="MDN Directory Structure" align="top" width="600"/>
 
-NOTE: You can use ([db.service.ts](./src/services/db.service.ts)) to handle SQL queries to the database.
+### 2) Every Feature is a Pull Request
 
-## Challenge Tasks
+- All features were broken down into sprints in the form of GitHub Issues. Pull Requests (PRs) were raised and merged.
 
--   **Fork this project:** Start by forking this repository
--   **REST API Development:** Design and implement a RESTful API to create, read, update, and delete projects and their reports.
--   **Special API Endpoint:** Create an API endpoint that retrieves all reports where the same word appears at least three times.
--   **Optional:** Secure all API routes with a hardcoded authentication token ("Password123").
--   **Submission:** After completing the challenge, email us the URL of your GitHub repository.
--   **Further information:**
-    -   If there is anything unclear regarding requirements, contact us by replying to our email.
-    -   Use small commits, we want to see your progress towards the solution.
-    -   Code clean and follow the best practices.
+  - <img src="images/pr.png" alt="Pull Requests" align="top" width="600"/>
 
-\
-Happy coding!
+- The project does not break in any commit.
+  - <img src="images/commits.png" alt="Commits" align="top" width="600"/>
+
+### 3) API Documentation and Versioning
+
+- Added [SwaggerUI](https://github.com/swagger-api/swagger-ui) for clear API documentation and implemented versioning (e.g., v1, v2) for backward compatibility.
+
+### 4) CI/CD Testing Pipeline
+
+- [Jest](https://jestjs.io/) used for Unit Testing the expected behavior of the API. The deployment includes a CI/CD pipeline that automatically triggers testing and blocks merges in case of failure.
+
+### 5) Changelog
+
+- For every PR, a changelog fragment is generated specifying the new features introduced, following the [Changelog Standard](https://keepachangelog.com/en/1.1.0/). Check [CHANGELOG.rst](CHANGELOG.rst).
+
+### 6) Containerization
+
+## Endpoints
+
+- To access the endpoints, you need to authorize with the password: `Password123`.
+
+| Endpoint                           | Method | Description                        | Parameters                                                            | Response Status & Description                                                                 |
+|------------------------------------|--------|------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| /api/v1/projects                   | GET    | Get all projects                   |        -                                                           | **200:** List of projects <br> **500:** Internal Server Error                                  |
+| /api/v1/projects                   | POST   | Create a new project               |         -                     | **201:** Project created <br> **500:** Internal Server Error                                  |
+| /api/v1/projects/{id}              | GET    | Get a project by ID                | `id (string, path)`                                                 | **200:** Project details <br> **400:** Bad Request <br> **404:** Not found <br> **500:** Internal Server Error |
+| /api/v1/projects/{id}              | PUT    | Update a project                   | `id (string, path)`            | **200:** Project updated <br> **404:** Not found <br> **500:** Internal Server Error          |
+| /api/v1/projects/{id}              | DELETE | Delete a project                   | `id (string, path)`                                             | **200:** Project deleted <br> **404:** Not found <br> **500:** Internal Server Error          |
+| /api/v1/reports/project/{projectId}| GET    | Get all reports for a project      | `projectId (string, path)`                                         | **200:** List of reports <br> **404:** No Project Found <br> **500:** Internal Server Error   |
+| /api/v1/reports/project/{projectId}| POST   | Create a new report for a project  | `projectId (string, path)`                          | **201:** Report created <br> **500:** Internal Server Error                                   |
+| /api/v1/reports/{id}               | GET    | Get a report by ID                 | `id (string, path)`                                                  | **200:** Report details <br> **400:** Bad Request <br> **404:** Not found <br> **500:** Internal Server Error |
+| /api/v1/reports/{id}               | PUT    | Update a report                    | `id (string, path)`                        | **200:** Report updated <br> **404:** Not found <br> **500:** Internal Server Error           |
+| /api/v1/reports/{id}               | DELETE | Delete a report                    | `id (string, path)`                                                   | **200:** Report deleted <br> **404:** Not found <br> **500:** Internal Server Error           |
+| /api/v1/reports/special            | GET    | Special report search              |                                                       | **200:** Search results <br> **404:** No reports found <br> **500:** Internal Server Error    |
+
+
+## Deployment
+
+- I deployed this project on AWS EC2 using nodejs and nginx.
