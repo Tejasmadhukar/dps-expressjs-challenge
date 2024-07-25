@@ -5,6 +5,7 @@ import {
 } from '../models/reportModel';
 import { v4 as uuid } from 'uuid';
 import db from './db.service';
+import { NoProjectFoundError, Project } from '../models/projectModel';
 
 export function getReportsByProject(projectId: string) {
 	try {
@@ -12,6 +13,13 @@ export function getReportsByProject(projectId: string) {
 			'SELECT * FROM reports WHERE projectid = @projectId',
 			{ projectId },
 		) as ReportModel[];
+		const project = db.query(
+			'SELECT * FROM projects WHERE id = @projectId',
+			{ projectId },
+		) as Project[];
+		if (project.length === 0) {
+			throw new NoProjectFoundError();
+		}
 		return reports;
 	} catch (error) {
 		console.error(error);
