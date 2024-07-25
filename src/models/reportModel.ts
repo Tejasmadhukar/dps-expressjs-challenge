@@ -1,6 +1,30 @@
 // ./src/models/reportModel.ts, model and validator for the report schema.
 import { Request, Response, NextFunction } from 'express';
 
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Report:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         projectId:
+ *           type: string
+ *         text:
+ *           type: string
+ *     NewReport:
+ *       type: object
+ *       required:
+ *         - text
+ *       properties:
+ *         text:
+ *           type: string
+ *     NoReportFoundError:
+ *        type: string
+ *        example: No report found
+ */
 export interface Report {
 	id: string;
 	text: string;

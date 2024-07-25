@@ -1,6 +1,38 @@
 // ./src/models/projectModel.ts, model and validator for the project schema.
 import { Request, Response, NextFunction } from 'express';
 
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Project:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         name:
+ *           type: string
+ *         description:
+ *           type: string
+ *     NewProject:
+ *       type: object
+ *       required:
+ *         - name
+ *         - description
+ *       properties:
+ *         name:
+ *           type: string
+ *         description:
+ *           type: string
+ *     InternalServerError:
+ *        type: string
+ *        example: INTERNAL SERVER ERROR OCCURRED
+ *     Error:
+ *        type: string
+ *     NoProjectFoundError:
+ *        type: string
+ *        example: No project was found
+ */
 export interface Project {
 	id: string;
 	name: string;
