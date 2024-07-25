@@ -5,6 +5,7 @@ import projectRouter from './routes/projectRoutes';
 import reportRouter from './routes/reportRoutes';
 import authMiddleware from './middleware/auth';
 import { swaggerSpec } from '../swaggerConfig';
+import loggerMiddleware from './middleware/logger';
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ const app: Express = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(loggerMiddleware);
 app.use('/api/v1/projects', authMiddleware, projectRouter);
 app.use('/api/v1/reports', authMiddleware, reportRouter);
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
