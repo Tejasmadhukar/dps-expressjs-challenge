@@ -1,4 +1,15 @@
 
+2024-07-26
+==========
+
+### Added
+ - Added a postman collection
+ - Added swagger docs which can be accessed at /docs
+ - Added a logger middleware
+ - Deployed this application on AWS
+
+ PR (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/10)
+
 2024-07-25
 ==========
 
