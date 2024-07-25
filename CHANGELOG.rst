@@ -8,7 +8,7 @@
  - Added a logger middleware
  - Deployed this application on AWS
 
- PR (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/10)
+PR (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/10)
 
 2024-07-25
 ==========
@@ -22,14 +22,14 @@
  - Fixed validators
  - Fixed controllers
 
- (https://github.com/DigitalProductschool/dps-expressjs-challenge/pull/6)
+PR (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/9)
 
 2024-07-25
 ==========
 
 ### Added
 - Added controllers and routers.
-     (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/5)
+PR (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/5)
 
 2024-07-25
 ==========
@@ -37,4 +37,5 @@
 ### Added
 
 - Added models, services and validators for the given schema.
-  (<https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/2>)
+
+PR (https://github.com/Tejasmadhukar/dps-expressjs-challenge/pull/2)
