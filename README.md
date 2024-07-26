@@ -42,7 +42,6 @@
 
 ## Installation
 
-There are two ways to run the code.
 ### 1) Manual Run
 
 ```
@@ -82,15 +81,9 @@ npm run dev
 
 - Added [SwaggerUI](https://github.com/swagger-api/swagger-ui) for clear API documentation and implemented versioning (e.g., v1, v2) for backward compatibility.
 
-### 4) CI/CD Testing Pipeline
-
-- [Jest](https://jestjs.io/) used for Unit Testing the expected behavior of the API. The deployment includes a CI/CD pipeline that automatically triggers testing and blocks merges in case of failure.
-
-### 5) Changelog
+### 4) Changelog
 
 - For every PR, a changelog fragment is generated specifying the new features introduced, following the [Changelog Standard](https://keepachangelog.com/en/1.1.0/). Check [CHANGELOG.rst](CHANGELOG.rst).
-
-### 6) Containerization
 
 ## Endpoints
 
