@@ -11,10 +11,10 @@
 </h2>
 
 <div align="center">
-<a href="http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com/docs" target="_blank">
+<a href="http://ec2-43-205-82-233.ap-south-1.compute.amazonaws.com/docs/#/Projects/get_api_v1_projects" target="_blank">
   <img alt="AWS" src="https://img.shields.io/badge/AWS_DEPLOYMENT-100000?style=for-the-badge&logo=AWS&logoColor=white&labelColor=FFFFFF&color=FFDD00">
 </a>
-<a href="https://documenter.getpostman.com/view/28054416/2sA3kYhywC#4a317ab6-facc-4bd3-8c72-cdd8f131322c" target="_blank">
+<a href="https://documenter.getpostman.com/view/28054416/2sA3kYhywC" target="_blank">
   <img alt="AWS" src="https://img.shields.io/badge/POSTMAN_COLLECTION-100000?style=for-the-badge&logo=AWS&logoColor=white&labelColor=FFFFFF&color=FFDD00">
 </a>
 </div>
@@ -37,8 +37,8 @@
 👋 Hello! I'm Tejas, Applying for Software Engineer Track at Batch#22 of DPS. This solution for the assignment.
 
 1. This covers the base requirements of task: **RestAPI, the Special Endpoint** and the **Optional task** [(as mentioned in Project Context and Challenge Tasks)](https://github.com/DigitalProductschool/dps-expressjs-challenge?tab=readme-ov-file#project-context)
-2. On top of that, this features: [**SwaggerUI Docs**](http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com/docs), [**Backend Validation**](https://github.com/Tejasmadhukar/dps-expressjs-challenge/blob/e9d3dba9ab90fba3cbdb25e48922b2911fab6f25/src/models/projectModel.ts#L43)
-3. Extra features are: [**Deployment on AWS EC2**](http://ec2-65-0-154-247.ap-south-1.compute.amazonaws.com), [**A live Postman Collection**](https://documenter.getpostman.com/view/28054416/2sA3kYhywC#4a317ab6-facc-4bd3-8c72-cdd8f131322c), [**Changelog**](https://github.com/Tejasmadhukar/dps-expressjs-challenge/blob/master/CHANGELOG.rst)
+2. On top of that, this features: [**SwaggerUI Docs**](http://ec2-43-205-82-233.ap-south-1.compute.amazonaws.com/docs), [**Backend Validation**](https://github.com/Tejasmadhukar/dps-expressjs-challenge/blob/e9d3dba9ab90fba3cbdb25e48922b2911fab6f25/src/models/projectModel.ts#L43)
+3. Extra features are: [**Deployment on AWS EC2**](http://ec2-43-205-82-233.ap-south-1.compute.amazonaws.com/docs), [**A live Postman Collection**](https://documenter.getpostman.com/view/28054416/2sA3kYhywC), [**Changelog**](https://github.com/Tejasmadhukar/dps-expressjs-challenge/blob/master/CHANGELOG.rst)
 
 ## Installation
 
