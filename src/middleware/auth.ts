@@ -10,7 +10,7 @@ function authenticationMiddleware(
 ) {
 	const token = req.headers.authorization;
 
-	if (!token && token !== `Bearer ${HARDCODED_TOKEN}`) {
+	if (!token || token !== `Bearer ${HARDCODED_TOKEN}`) {
 		res.status(401).send('UNAUTHORIZED');
 	}
 
